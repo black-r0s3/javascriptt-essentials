@@ -1,11 +1,19 @@
-function Apple( x, y, color, score )
-{
-    this.x = x;
-    this.y = y;
-    this.color = color;
-    this.score = score;
-}
+var carsLeft  = 1,
+    carsRight = 0,
+    greenMan  = "yes";
 
-var apple1 = new Apple( 5, 10, "blue", 200 );
-var apple2 = new Apple( 50, 100, "red", 25);
-var apple3 = new Apple( 20, 200, "black", 10 );
+if( greenMan === "yes" )
+{
+    console.log( 'cross the road' );
+}
+else if(
+    greenMan === "yes" && ( carsLeft === 0 || carsRight === 0 )
+
+)
+{
+    console.log( 'All clear! Cross the road' );
+}
+else
+{
+    console.log( "Stay where you are!" );
+}

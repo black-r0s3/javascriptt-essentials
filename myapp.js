@@ -1,19 +1,7 @@
-var carsLeft  = 1,
-    carsRight = 0,
-    greenMan  = "yes";
+var classRegister = [ "Lawrence", "John", "Jeff" ];
 
-if( greenMan === "yes" )
-{
-    console.log( 'cross the road' );
-}
-else if(
-    greenMan === "yes" && ( carsLeft === 0 || carsRight === 0 )
 
-)
+for( var index in classRegister )
 {
-    console.log( 'All clear! Cross the road' );
-}
-else
-{
-    console.log( "Stay where you are!" );
+    console.log( classRegister[ index ] );
 }
